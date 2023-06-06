@@ -4,12 +4,20 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:PaseDeListaM"
+    xmlns:demo="clr-namespace:PaseDeListaM.Views.Demo"
     Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Flex Layout Demo"
+        ContentTemplate="{DataTemplate demo:FlexLayout}"
+        Route="FlexDemo"/>
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+    
 
 </Shell>
 

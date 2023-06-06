@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaseDeListaM.Views.Demo.FlexLayout"
+             Title="FlexLayout">
+    <FlexLayout Direction="Column">
+        <Frame Padding="0" CornerRadius="0">
+            <FlexLayout>
+                <BoxView Color="Aqua"/>
+                <BoxView Color="Red"/>
+                <BoxView Color="Green"/>
+            </FlexLayout>
+        </Frame>
+        <Frame Padding="0" CornerRadius="0">
+            <FlexLayout>
+                <BoxView Color="BlueViolet" FlexLayout.Basis="270"/>
+                <BoxView Color="Gold"/>
+            </FlexLayout>
+        </Frame>
+        <Frame Padding="0" CornerRadius="0">
+            <FlexLayout Wrap="NoWrap">
+                <BoxView Color="Tomato"/>
+                <BoxView Color="Moccasin" FlexLayout.Basis="270"/>
+            </FlexLayout>
+        </Frame>
+        <Frame Padding="0" CornerRadius="0">
+            <FlexLayout>
+                <BoxView Color="DodgerBlue"/>
+                <BoxView Color="Lime"/>
+            </FlexLayout>
+        </Frame>
+    </FlexLayout>
+
+</ContentPage>
