@@ -3,10 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PaseDeListaM.Views.Demo.GridLayout"
              Title="GridLayout">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button BackgroundColor="Red" Text="Boton 1"/>
+        <Button Grid.Column="1"
+            BackgroundColor="Blue" Text="Boton 2"/>
+        <Button Grid.Column="2"
+            BackgroundColor="Green" Text="Boton 3"/>
+        <Button Grid.Row="2" Grid.Column="2"
+            BackgroundColor="Pink" Text="Boton 4"/>
+        <Button Grid.Row="2" Grid.ColumnSpan="2"
+            BackgroundColor="Aqua" Text="Boton 5"/>
+        <Button Grid.Row="1"
+            BackgroundColor="Pink" Text="Boton 6"/>
+        <Button Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+            BackgroundColor="Aqua" Text="Boton 7"/>
+    </Grid>
 </ContentPage>

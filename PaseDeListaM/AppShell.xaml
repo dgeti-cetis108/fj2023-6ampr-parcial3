@@ -8,6 +8,11 @@
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
+        Title="Grid Layout Demo"
+        ContentTemplate="{DataTemplate demo:GridLayout}"
+        Route="GridDemo"/>
+
+    <ShellContent
         Title="Flex Layout Demo"
         ContentTemplate="{DataTemplate demo:FlexLayout}"
         Route="FlexDemo"/>
